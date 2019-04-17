@@ -1,0 +1,136 @@
+.swiss-privacy {
+    grid-area: advantage-1;
+}
+.double-encryption {
+    grid-area: advantage-2;
+}
+.anonymous-email {
+    grid-area: advantage-3;
+}
+.physical-security{
+    grid-area: advantage-4;
+}
+
+.container-grid_advantages {
+    display: grid;
+    width: 1250px;
+    height: 480px;
+    margin-left: 308px;
+    grid-template-columns: 380px 380px 380px;
+    grid-template-rows: 280px;
+    grid-template-areas: 
+      "advantage-1 advantage-2 advantage-3"
+      "advantage-4 advantage-4 .";
+    justify-content:space-between;
+    
+  }
+
+section img {
+    float: left;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #6d6d6d;
+    letter-spacing: 1px;
+}
+
+h4 {
+    margin: -5px 0px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+section p {
+    clear: both;
+    padding: 18px 14px;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.double-encryption,
+.anonymous-email,
+.physical-security {
+    position: relative;
+}
+
+.double-encryption:before {
+    content: '';
+    width: 1px;
+    height: 210px;
+    position: absolute;
+    top: -128px;
+    left: -27px;
+    background: #858688;
+}
+
+.anonymous-email::after {
+    content: '';
+    width: 190px;
+    height: 1px;
+    position: absolute;
+    top: 7px;
+    right: -245px;
+    background: #858688;
+}
+
+.physical-security {
+    padding-right: 12px; 
+    justify-items: end;
+    align-items: start; 
+    text-align: right;
+}
+
+.physical-security h3 {
+    font-size: 60px;
+    font-weight: 500;
+    color: #6d6d6d;
+    letter-spacing: 1px;
+}
+
+.physical-security p {
+    text-align: right;
+    font-size: 24px;
+    padding: 0 0 0 80px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+}
+
+.btn-add-information {
+    position: absolute;
+    bottom: -22px;
+    right: -186px;
+    padding: 18px 36px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #858688;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: #ffffff;	
+    
+}
+
+.physical-security::before {
+    content: '';
+    width: 1000px;
+    height: 1px;
+    position: absolute;
+    bottom: 7px;
+    left: -307px;
+    z-index: -1;
+    background: #858688;
+}
+
+.physical-security::after {
+    content: '';
+    width: 1px;
+    height: 472px;
+    position: absolute;
+    bottom: 0;
+    right: -25px;
+    z-index: -1;
+    background: #858688;
+}
