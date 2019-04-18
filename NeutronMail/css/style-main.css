@@ -109,8 +109,7 @@ section p {
     border: 1px solid #858688;
     border-radius: 30px;
     text-decoration: none;
-    background-color: #ffffff;	
-    
+    background-color: #ffffff;	   
 }
 
 .physical-security::before {
@@ -118,7 +117,7 @@ section p {
     width: 1000px;
     height: 1px;
     position: absolute;
-    bottom: 7px;
+    bottom: 8px;
     left: -307px;
     z-index: -1;
     background: #858688;
@@ -134,3 +133,178 @@ section p {
     z-index: -1;
     background: #858688;
 }
+.companies-partners {
+     margin: 60px 0 0 20px;
+}
+
+.wrapper-container-taglines {
+    background-image: url(../assets/images/backgroundForContainerTaglines.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.container-taglines {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1178px;
+    height: 930px;
+    margin: 35px 0 50px 355px;
+    background-image: url(../assets/images/laptop.png);
+    background-position: right top; 
+    background-repeat: no-repeat;
+}
+
+blockquote {
+    width: 550px;
+    align-self: flex-start;
+    padding-top: 20px;
+    margin-left: 46px;
+    line-height: 1.3;
+    font-size: 24px;
+    font-family: 'Malaga Narrow OT Reg','Georgia',serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+blockquote p {
+    color: rgba(16, 16, 16, 255);   
+}
+
+cite {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tagline-device {
+    width: 428px;
+    height: 330px;
+    padding:0 120px 0 20px;
+    align-self: center;
+    text-align: right; 
+}
+
+.tagline-device h3 {
+    font-size: 34px;
+    color: rgba(16, 16, 16, 255); 
+}
+.tagline-device p {
+    padding: 10px 0 30px 0 ;
+    font-size: 16px;
+}
+.btn-googlePlay{
+    padding-left: 10px;
+}
+
+.tagline-privacy {
+    position: relative;
+    width: 740px;
+    height: 210px;
+    padding:0 120px 0 20px;
+    align-self: center;
+    text-align: center; 
+}
+
+.tagline-privacy::after{
+    content: '';
+    width: 1400px;
+    height: 1px;
+    position: absolute;
+    top: -65px;
+    left: -104px;
+    z-index: -1;
+    background: #858688;
+}
+
+.tagline-privacy h3 {
+    font-size: 35px;
+    color: rgba(16, 16, 16, 255); 
+}
+
+.tagline-privacy p {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.btn-updrade,.btn-donate {
+    display: inline-block;
+    height: 60px;
+    font-family: 'titillium_webbold','Tahoma', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    line-height: 60px;
+    color: #fffffe;
+    text-decoration: none;
+    border-radius: 30px;
+    
+}
+.btn-wrapper-tagline{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 466px;
+    margin: 0 auto;
+}
+
+.btn-updrade {
+    width: 250px;
+    background: rgb(99,107,146);
+    background: linear-gradient(94deg, rgba(99,107,146,0.8998949921765581) 0%, rgba(98,87,132,0.8998949921765581) 28%, rgba(95,47,106,0.9026961126247374) 100%);
+}
+
+.btn-donate{
+    width: 170px;
+    background: rgb(53,188,224);
+    background: linear-gradient(94deg, rgba(53,188,224,1) 32%, rgba(69,162,228,1) 56%, rgba(94,123,234,1) 100%);
+}
+
+.icon-cloud-upload,
+.icon-dollar {
+    margin: 0 10px;
+}
+
+.icon-cloud-upload:before {
+    content: "\f0ee";
+  }
+  .icon-dollar:before {
+    content: "\f155";
+  }
+.companies-helping {
+    position: relative;
+    width: 974px;
+    height: 250px;
+    text-align: right;
+    margin: 0 auto;
+}
+
+.companies-helping p {
+    font-size: 14px;
+    padding: 20px 10px 0;
+}
+.companies-helping img{
+    display: block;
+    position: relative;
+    top: 0;
+    left: 50px;
+}
+.companies-helping::before {
+    content: '';
+    width: 1400px;
+    height: 1px;
+    position: absolute;
+    top: 0;
+    right: -13px;
+    background: #858688;
+}
+
+.companies-helping::after{
+    content: '';
+    width: 1px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: -13px;
+    background: #858688;    
+}
+ 

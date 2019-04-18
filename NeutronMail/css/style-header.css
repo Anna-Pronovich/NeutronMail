@@ -98,9 +98,8 @@ header li a:hover {
 
 .icon-sign-in:before {
     content: "\f090";
-  }
+}
  
-
 .header-text {
     position: relative;
     text-align: center;

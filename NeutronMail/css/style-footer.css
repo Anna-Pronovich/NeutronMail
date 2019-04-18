@@ -1,0 +1,25 @@
+footer a {
+    text-decoration: none;	
+}
+.footer-lists {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 1170px;
+}
+.footer-lists ul {
+    direction: rtl;
+  }
+
+  .footer-social-links{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 200pxpx;
+    margin: 10px -10px;
+    font-size: 14px;
+  }
+  .mail-addresses li,
+  .footer-social-links li{
+    list-style-type: none;
+  }
