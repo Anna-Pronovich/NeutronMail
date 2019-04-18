@@ -36,6 +36,11 @@ header ul li {
     list-style-type: none;
 }
 
+.language-selector_list li+li:before {
+    content: "/";
+    padding-right: 10px; 
+}
+
 header li a {
     padding: 10px;
     border-bottom: 1px solid transparent;

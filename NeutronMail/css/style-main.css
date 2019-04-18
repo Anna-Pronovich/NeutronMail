@@ -87,7 +87,7 @@ section p {
 .physical-security h3 {
     font-size: 60px;
     font-weight: 500;
-    color: #6d6d6d;
+    color: rgba(16, 16, 16, 255);
     letter-spacing: 1px;
 }
 
@@ -109,7 +109,7 @@ section p {
     border: 1px solid #858688;
     border-radius: 30px;
     text-decoration: none;
-    background-color: #ffffff;	   
+    background-color: #fffffe;	   
 }
 
 .physical-security::before {
@@ -139,7 +139,7 @@ section p {
 
 .wrapper-container-taglines {
     background-image: url(../assets/images/backgroundForContainerTaglines.png);
-    background-position: center; 
+    background-position: 0 118px; 
     background-repeat: no-repeat; 
     background-size: cover; 
 }
@@ -301,7 +301,7 @@ cite {
 .companies-helping::after{
     content: '';
     width: 1px;
-    height: 400px;
+    height: 440px;
     position: absolute;
     top: 0;
     right: -13px;

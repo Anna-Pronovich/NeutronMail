@@ -1,25 +1,91 @@
+footer {
+  width: 1155px;
+  margin-left: 200px;
+  padding-top: 38px; 
+}
+
+.mail-addresses {
+  position: relative;
+  float: left;
+  width: 250px;
+  padding-left: 20px;
+  line-height: 1.4;
+  font-size: 14px;
+}
+.color-text-dark{
+  font-weight: bold;
+  color: rgba(16, 16, 16, 255);
+}
+
+.mail-addresses::before{
+    content: '';
+    width: 1px;
+    height: 132px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    z-index: -1;
+    background: #858688;
+}
+
 footer a {
     text-decoration: none;	
 }
+
 .footer-lists {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    width: 1170px;
+  position: relative;
+  float: right;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 520px;
+}
+
+.footer-lists::before {
+  content: '';
+  width: 1px;
+  height: 316px;
+  position: absolute;
+  top: 0;
+  left: 113px;
+
+  background: #858688;
 }
 .footer-lists ul {
     direction: rtl;
-  }
+ }
 
-  .footer-social-links{
+.footer-lists p {
+  font-family: 'titillium_webbold','Tahoma', sans-serif;
+  font-size: 18px;
+  color: rgba(16, 16, 16, 255);
+  text-align: right;
+  padding: 0 0  20px 0;
+}
+
+.footer-legal_list {
+  width: 140px;
+}
+
+.footer-neutronMail_list {
+  width: 110px;
+}
+
+.footer-social-links{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    width: 200pxpx;
-    margin: 10px -10px;
-    font-size: 14px;
-  }
-  .mail-addresses li,
-  .footer-social-links li{
+    width: 362px;
+    padding: 83px 0 12px 0 ;
+    font-size: 12px;
+    clear: both;
+}
+
+.mail-addresses li,
+.footer-social-links li{
     list-style-type: none;
-  }
+}
+
+.cooperate {
+  font-size: 12px;
+}
