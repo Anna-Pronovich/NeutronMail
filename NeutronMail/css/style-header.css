@@ -10,7 +10,7 @@ header {
     width: 1400px;
     margin: 75px auto;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
 }
 
@@ -19,15 +19,24 @@ a.logo {
     font-family: 'titillium_webbold','Tahoma', sans-serif;
     text-decoration: none;
 }
+a.logo:hover {
+    border: 1px solid transparent;
+}
+a.logo:visited{
+    color:#858688;
+}
 
-/* span .color-text-violet {
+.color-text-violet {
     color: #5b4295;
-} */
+}
 
 .language-selector_list { 
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    width: 285px;
+    height: 20px;
+    box-sizing: border-box;
     margin: 10px -10px;
     font-size: 14px;
 }
@@ -41,13 +50,13 @@ header ul li {
     padding-right: 10px; 
 }
 
-header li a {
+header a {
     padding: 10px;
     border-bottom: 1px solid transparent;
     text-decoration: none;	
 }
 
-header li a:hover {
+header  a:hover {
     font-family: 'titillium_webbold', 'Tahoma', sans-serif;;
     border-bottom: 1px solid #858688;
 }
@@ -95,6 +104,16 @@ header li a:hover {
     box-shadow: 0px 8px 20px 0px #7384bb ; 
 }
 
+.btn-navbar_sign-up:hover {
+    background: rgb(98,116,202);
+    background: linear-gradient(148deg, rgba(98,116,202,0.8774860285911239) 25%, rgba(93,80,164,0.8914916308320203) 51%, rgba(88,44,126,1) 76%);
+}
+
+.btn-navbar_login:hover {
+    border: 1px solid transparent;
+    color: #6274ca;
+}
+
 .icon-sign-in {
     color: rgb(88,44,126);
     font-size: 16px;
@@ -135,7 +154,7 @@ h2 {
     position: absolute;
     bottom: 5px;
     right: 34px;
-    height: 115px;  
+    height: 115px; 
 }
 
 .social-networks a {
@@ -146,7 +165,8 @@ h2 {
 }
 
 .social-networks a:hover {
-    color: #d7fcf5;
+    color: rgb(98,116,202);
+    border: 1px solid transparent;
 }
 
 .icon-twitter-square:before {
@@ -179,11 +199,15 @@ h2 {
     background: linear-gradient(94deg, rgba(99,107,146,0.8998949921765581) 0%, rgba(98,87,132,0.8998949921765581) 28%, rgba(95,47,106,0.9026961126247374) 100%);
 }
 
+.btn-container_item a:hover {
+    background: rgb(95,46,105);
+    background: linear-gradient(94deg, rgba(95,46,105,0.8998949921765581) 30%, rgba(99,93,136,0.8438725832129726) 56%, rgba(100,108,146,0.7234244039412641) 93%);
+}
+
 .btn-create-account {
     padding: 14px 67px;
     margin-right: 8px;
     font-size: 18px;
-    /* outline: none; */
     border-radius: 30px;
 }
 
@@ -197,9 +221,14 @@ h2 {
 .icon-googleplay:before {
     content: "\e900";
 
-  }
+}
 
-  .icon-apple:before {
+.icon-apple:before {
     content: "\f179";
-  }
+}
   
+  @media all and (max-width: 1100px) {
+    .main-nav {
+        flex-flow: column wrap;
+  }
+}

@@ -4,6 +4,16 @@ footer {
   padding-top: 38px; 
 }
 
+footer a {
+  text-decoration: none;	
+  border-bottom: 1px solid transparent;
+}
+
+footer a:hover {
+  font-family: 'titillium_webbold', 'Tahoma', sans-serif;;
+  border-bottom: 1px solid #858688;
+}
+
 .mail-addresses {
   position: relative;
   float: left;
@@ -12,6 +22,7 @@ footer {
   line-height: 1.4;
   font-size: 14px;
 }
+
 .color-text-dark{
   font-weight: bold;
   color: rgba(16, 16, 16, 255);
@@ -24,12 +35,7 @@ footer {
     position: absolute;
     top: 6px;
     left: 0;
-    z-index: -1;
     background: #858688;
-}
-
-footer a {
-    text-decoration: none;	
 }
 
 .footer-lists {
@@ -39,6 +45,8 @@ footer a {
   flex-flow: row wrap;
   justify-content: space-between;
   width: 520px;
+  height: 155px;
+  box-sizing: border-box;
 }
 
 .footer-lists::before {
@@ -48,9 +56,9 @@ footer a {
   position: absolute;
   top: 0;
   left: 113px;
-
   background: #858688;
 }
+
 .footer-lists ul {
     direction: rtl;
  }
@@ -71,15 +79,23 @@ footer a {
   width: 110px;
 }
 
-.footer-social-links{
+.footer-social-links {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     width: 362px;
+    height: 111px;
     padding: 83px 0 12px 0 ;
     font-size: 12px;
+    box-sizing: border-box;
     clear: both;
 }
+
+.footer-social-links li+li:before {
+  content: "/";
+  padding-right: 10px; 
+}
+
 
 .mail-addresses li,
 .footer-social-links li{
