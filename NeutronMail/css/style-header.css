@@ -23,6 +23,7 @@ a.logo {
 a.logo:hover {
     border: 1px solid transparent;
 }
+
 a.logo:visited{
     color:#858688;
 }
