@@ -17,8 +17,9 @@ header {
 a.logo {
     font-size: 30px;
     font-family: 'titillium_webbold','Tahoma', sans-serif;
-    text-decoration: none;
+    padding:  0 0 10px 0;
 }
+
 a.logo:hover {
     border: 1px solid transparent;
 }
@@ -227,8 +228,46 @@ h2 {
     content: "\f179";
 }
   
-  @media all and (max-width: 1100px) {
+@media all and (max-width: 1800px) {
+    .social-networks {
+        left: 1400px;
+    }
+}
+
+@media all and (max-width: 1630px) {
+    .social-networks {
+        left: 1000px;
+    }
+
     .main-nav {
-        flex-flow: column wrap;
-  }
+        max-width: 1000px;
+    }
+
+    .main-nav_menu {
+       flex-direction: column;
+       align-items: flex-end;
+    }
+}
+
+
+@media all and (max-width: 1000px) {
+    .social-networks {
+        display: none;
+    }
+
+    .main-nav {
+        max-width: 600px;
+        margin-left: 30px;
+       flex-direction: column;
+       align-items: flex-start;
+    }
+    .main-nav_menu {
+        flex-flow: row wrap;
+     }
+     .menu-notifications {
+        justify-content: flex-start;
+        padding-top: 10px;
+  
+    }
+
 }

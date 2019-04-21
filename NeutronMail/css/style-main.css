@@ -251,7 +251,7 @@ cite {
     border-radius: 30px;
 }
 
-.btn-wrapper-tagline{
+.btn-wrapper-tagline {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -291,10 +291,11 @@ cite {
 
 .icon-cloud-upload:before {
     content: "\f0ee";
-  }
+}
   .icon-dollar:before {
     content: "\f155";
-  }
+}
+
 .companies-helping {
     position: relative;
     width: 974px;
@@ -307,7 +308,8 @@ cite {
     font-size: 14px;
     padding: 20px 10px 0;
 }
-.companies-helping img{
+
+.companies-helping img {
     display: block;
     position: relative;
     top: 0;
@@ -333,3 +335,83 @@ cite {
     background: #858688;    
 }
  
+@media all and (max-width: 1630px) {
+    .container-grid_advantages {
+        max-width: 1000px;
+        min-height: 700px;
+        margin: 0 auto;
+        grid-template-columns: 190px 190px 190px 190px;
+        grid-template-rows: 210px;
+        grid-template-areas: 
+        "advantage-1 advantage-1 advantage-2 advantage-2"
+        ". advantage-3 advantage-3  ."
+        "advantage-4 advantage-4 advantage-4 advantage-4 ";
+        justify-content:space-around;
+    }
+
+    .anonymous-email::after {
+        top: -10px;
+        right: 621px;
+    }
+
+    .btn-add-information {
+        position: relative;
+        top: 80px;
+        right: -71px;
+    }
+
+    .container-taglines {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .container-grid_advantages {
+        max-width: 500px;
+        min-height: 1000px;
+        margin: 0 auto;
+        grid-template-columns: 380px ;
+        grid-template-rows: 210px;
+        grid-template-areas: 
+        "advantage-1"
+        "advantage-2" 
+        "advantage-3"
+        "advantage-4";
+        justify-content: center;
+    }
+
+    .physical-security {
+        padding-right: 0px;
+        text-align: center;
+    }
+    .physical-security h3{
+        font-size: 50px;
+    }
+    
+    .physical-security::before {
+        width: 400px;
+    }
+    
+    .btn-add-information {
+        top: 57px;
+    }
+    .companies-partners,
+    .companies-helping,
+    .tagline-privacy::after{
+        display: none;
+    }
+    .container-taglines {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .tagline-privacy {
+        max-width: 450px;
+        min-height: 250px;
+    }
+
+    .companies-helping::before {
+        display: none;
+    }
+}

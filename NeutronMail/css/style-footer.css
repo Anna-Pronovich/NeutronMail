@@ -23,19 +23,19 @@ footer a:hover {
   font-size: 14px;
 }
 
-.color-text-dark{
+.color-text-dark {
   font-weight: bold;
   color: rgba(16, 16, 16, 255);
 }
 
-.mail-addresses::before{
-    content: '';
-    width: 1px;
-    height: 132px;
-    position: absolute;
-    top: 6px;
-    left: 0;
-    background: #858688;
+.mail-addresses::before {
+  content: '';
+  width: 1px;
+  height: 132px;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  background: #858688;
 }
 
 .footer-lists {
@@ -60,8 +60,8 @@ footer a:hover {
 }
 
 .footer-lists ul {
-    direction: rtl;
- }
+  direction: rtl;
+}
 
 .footer-lists p {
   font-family: 'titillium_webbold','Tahoma', sans-serif;
@@ -80,15 +80,15 @@ footer a:hover {
 }
 
 .footer-social-links {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    width: 362px;
-    height: 111px;
-    padding: 83px 0 12px 0 ;
-    font-size: 12px;
-    box-sizing: border-box;
-    clear: both;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 362px;
+  height: 111px;
+  padding: 83px 0 12px 0 ;
+  font-size: 12px;
+  box-sizing: border-box;
+  clear: both;
 }
 
 .footer-social-links li+li:before {
@@ -99,9 +99,37 @@ footer a:hover {
 
 .mail-addresses li,
 .footer-social-links li{
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .cooperate {
   font-size: 12px;
+}
+
+@media all and (max-width: 1630px) {
+  footer {
+    width: 100%;
+  }
+  .footer-lists {
+    float: none;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  footer {
+    margin-left: 30px;
+  }
+  .footer-lists {
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .footer-lists::before {
+    display: none;
+  }
+  .mail-addresses {
+    float: none;
+    padding: 20px;
+    margin: 0 auto;
+  }
 }
